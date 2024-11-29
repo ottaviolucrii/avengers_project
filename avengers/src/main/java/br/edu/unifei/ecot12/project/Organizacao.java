@@ -12,9 +12,9 @@ public interface Organizacao {
 
     String getNome();
 
-    Personagem getLider();
+    LiderOrg getLider();
 
-    void setLider(Personagem lider);
+    void setLider(LiderOrg lider);
 
     ArrayList<Personagem> getMembros();
 

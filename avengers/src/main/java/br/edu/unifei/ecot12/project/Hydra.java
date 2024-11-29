@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public abstract class Hydra implements Organizacao{
     
         private String nome;
-        private Personagem lider;
+        private LiderOrg lider;
         private ArrayList<Personagem> membros = new ArrayList<>();
     
-        public Hydra(String nome, Personagem lider) {
+        public Hydra(String nome, LiderOrg lider) {
             this.nome = nome;
             this.lider = lider;
             this.membros = new ArrayList<>();
@@ -30,11 +30,11 @@ public abstract class Hydra implements Organizacao{
             return nome;
         }
         @Override
-        public Personagem getLider() {
+        public LiderOrg getLider() {
             return lider;
         }
         @Override
-        public void setLider(Personagem lider) {
+        public void setLider(LiderOrg lider) {
             this.lider = lider;
         }
         @Override
