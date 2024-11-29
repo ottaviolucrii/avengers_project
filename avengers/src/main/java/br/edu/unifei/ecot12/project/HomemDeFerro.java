@@ -1,11 +1,10 @@
 package br.edu.unifei.ecot12.project;
 
-public class SpiderMan extends HeroiInteligente{
-
+public class HomemDeFerro extends HeroiInteligente{
 
     private Artefato artefato;
 
-    public SpiderMan(String nome, int idade, String habilidadeEspecial, boolean emMissao, StatusHeroi status, int atrForcaIntelig) {
+    public HomemDeFerro(String nome, int idade, String habilidadeEspecial, boolean emMissao, StatusHeroi status, int atrForcaIntelig) {
         super(nome, idade, habilidadeEspecial, emMissao,status, atrForcaIntelig);
     }
 
@@ -17,22 +16,22 @@ public class SpiderMan extends HeroiInteligente{
             if(artefato != null){
             System.out.println("Artefato: " + artefato.getNome());
         }else{
-            System.out.println("SpiderMan esta sem artefato!");
+            System.out.println("Homem-De-Ferro esta sem artefato!");
         }
     }
     }
 
     @Override
     public void atacar(){
-        System.out.println("Vai Teia!");
+        System.out.println("Armadura Mark, do toninho!");
     }
 
     @Override
     public void usarArtefato(Artefato artefato){
         if(artefato instanceof MarteloThor){
-            System.out.println("SpiderMan não pode usar o martelo do Thor!");
+            System.out.println("Homem-De-Ferro não pode usar o martelo do Thor!");
         }else{
-            System.out.println("spiderMan esta usando o artefato: " + artefato.getNome());
+            System.out.println("Homem-De-Ferro esta usando o artefato: " + artefato.getNome());
         }
 
         
@@ -40,3 +39,6 @@ public class SpiderMan extends HeroiInteligente{
 
     
 }
+
+
+

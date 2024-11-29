@@ -28,10 +28,11 @@ public abstract class VilaoForte extends Vilao{
             System.out.println("Habilidade especial: " + getHabilidadeEspecial());
             System.out.println("Esta capturado ? : "+ (isCapturado() ? "Sim" : "Não" ));
             System.out.println("Atributo específico do vilao: " + atrForcaV);
-        }else
+        }else{
         for (Vilao vilaov : viloesFortes){
             System.out.println("Nome: " + vilaov.getNome());
         }
+    }
     }
     
     public static void setViloesFortes(ArrayList<VilaoForte> viloesFortes) {

@@ -49,4 +49,8 @@ public abstract class VilaoInteligente extends Vilao {
         VilaoInteligente.viloesInteligentes = viloesInteligentes;
     }
 
+    public int getAtrVIntelig() {
+        return atrVIntelig;
+    }
+
 }
