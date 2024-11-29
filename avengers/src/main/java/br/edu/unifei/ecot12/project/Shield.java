@@ -2,7 +2,7 @@ package br.edu.unifei.ecot12.project;
 
 import java.util.ArrayList;
 
-public abstract class Shield implements Organizacao{
+public class Shield implements Organizacao{
 
     private String nome;
     private Personagem lider;

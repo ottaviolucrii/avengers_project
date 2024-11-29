@@ -14,7 +14,7 @@ public class Thanos extends VilaoForte{
 
     @Override
     public void atacar(){
-        System.out.println("Esmagar!");
+        System.out.println("Estalo supremo!");
     }
 
     @Override
