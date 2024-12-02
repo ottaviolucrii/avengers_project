@@ -37,6 +37,9 @@ public abstract class VilaoInteligente extends Vilao {
 
     }
 
+    @Override
+    public abstract void usarArtefato(Artefato artefato);
+
     public static void removeIVilao(String nome){
         viloesInteligentes.removeIf(vilaoInteligente -> vilaoInteligente.getNome().equals(nome));
     }

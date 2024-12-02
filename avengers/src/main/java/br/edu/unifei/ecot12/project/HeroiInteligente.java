@@ -40,7 +40,7 @@ public abstract class HeroiInteligente extends Heroi {
         heroisInteligentes.removeIf(heroi -> heroi.getNome().equals(nome));
     }
 
-    public static ArrayList<HeroiInteligente> getHeroiFortes(){
+    public static ArrayList<HeroiInteligente> getHeroiInteligente(){
         return heroisInteligentes;
     }
 

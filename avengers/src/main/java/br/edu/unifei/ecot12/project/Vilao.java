@@ -59,6 +59,9 @@ public abstract class Vilao extends Personagem {
         viloes.removeIf(vilao -> vilao.getNome().equals(nome));
     }
 
+    @Override
+    public abstract void usarArtefato(Artefato artefato);
+
     public abstract void atacar();
 
     public boolean isCapturado() {

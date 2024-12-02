@@ -62,7 +62,7 @@ public abstract class Heroi extends Personagem{
     }
 
 
-    public void altMissao(Boolean estaEmMissao) {
+    public void altMissao(boolean estaEmMissao) {
         this.emMissao = estaEmMissao;
     }
 

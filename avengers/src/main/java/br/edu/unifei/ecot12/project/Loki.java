@@ -2,8 +2,9 @@ package br.edu.unifei.ecot12.project;
 
 import java.util.ArrayList;
 
-public class Loki extends VilaoInteligente{
+public class Loki extends VilaoInteligente {
 
+    private Artefato artefato;
 
     private static ArrayList<VilaoInteligente> viloesInteligentes = new ArrayList<>();
 
@@ -20,29 +21,30 @@ public class Loki extends VilaoInteligente{
 
     @Override
     public void exibirInformacoes(boolean detalhado) {
+        super.exibirInformacoes(detalhado);
         if (detalhado) {
-            System.out.println("Nome: " + getNome());
-            System.out.println("Idade: " + getIdade());
-            System.out.println("Habilidade especial: " + getHabilidadeEspecial());
-            System.out.println("Esta capturado ? : " + (isCapturado() ? "Sim" : "Não"));
-            System.out.println("Atributo específico do vilao: " + getAtrVIntelig());
-        } else {
-            for (VilaoInteligente viloesInt : viloesInteligentes) {
-                System.out.println("Nome: " + viloesInt.getNome());
+            if (artefato != null) {
+                System.out.println("Artefato: " + artefato.getNome());
+            } else {
+                System.out.println("Loki esta esta sem seu cetro!");
+                for (VilaoInteligente viloesInt : viloesInteligentes) {
+                    System.out.println("Nome: " + viloesInt.getNome());
+                }
+
             }
 
         }
-
     }
 
     @Override
     public void usarArtefato(Artefato artefato) {
-        if(artefato instanceof CetroLoki){
-            System.out.println("Loki esta com seu cajado!");
-        }else{
-            System.out.println("Não é seu cajado!");
+        if (artefato instanceof CetroLoki) {
+            System.out.println("Thanos esta com a Manopla do Infinito!");
+            System.out.println("Vai estalar o dedo! Impeça-o !!!");
+            this.artefato = artefato;
+        } else {
+            System.out.println("Não é a Manopla do Infinito!");
         }
+
     }
-
 }
-

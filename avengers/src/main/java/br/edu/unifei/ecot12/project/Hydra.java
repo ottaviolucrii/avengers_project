@@ -2,7 +2,7 @@ package br.edu.unifei.ecot12.project;
 
 import java.util.ArrayList;
 
-public abstract class Hydra implements Organizacao{
+public class Hydra implements Organizacao{
     
         private String nome;
         private LiderOrg lider;

@@ -34,6 +34,10 @@ public abstract class VilaoForte extends Vilao{
         }
     }
     }
+
+
+    @Override
+    public abstract void usarArtefato(Artefato artefato);
     
     public static void setViloesFortes(ArrayList<VilaoForte> viloesFortes) {
         VilaoForte.viloesFortes = viloesFortes;

@@ -16,7 +16,7 @@ public class Thor extends HeroiForte{
             if(artefato != null){
             System.out.println("Artefato: " + artefato.getNome());
         }else{
-            System.out.println("Thor esta sem seu martelo!");
+            System.out.println("Thor esta sem artefato!");
         }
     }
     }
